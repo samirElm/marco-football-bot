@@ -154,6 +154,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   facebook-messenger
   figaro
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
