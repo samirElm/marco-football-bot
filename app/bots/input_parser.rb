@@ -6,6 +6,6 @@ class InputParser
   end
 
   def club
-    input
+    input.capitalize
   end
 end
