@@ -8,8 +8,12 @@ class FootballData
   end
 
   def next_game
-    next_fixture = next_fixture_from(schedule_for(club))
-    "#{next_fixture['homeTeamName']} - #{next_fixture['awayTeamName']} le #{next_fixture['date'].to_date.strftime('%d/%m')}"
+    if schedule_for(club)
+      next_fixture = next_fixture_from(schedule_for(club))
+      return "⚽ #{next_fixture['homeTeamName']} vs. #{next_fixture['awayTeamName']}\n📅 #{next_fixture['date'].to_date.strftime('%d/%m')} à #{next_fixture['date'].to_time.strftime('%Hh%M')}"
+    else
+      return "Ah, je ne connais pas ce club !"
+    end
   end
 
   private
@@ -25,7 +29,7 @@ class FootballData
       end
     end
 
-    return "No team found"
+    return false
   end
 
   def all_teams_from(competition_id)
