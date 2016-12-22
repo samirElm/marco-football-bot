@@ -1,0 +1,39 @@
+.banner {
+  height: 100vh;
+  .banner-content {
+    padding-top: 60px;
+    .banner-content-text {
+      padding: 90px 100px 0px 0px;
+      color: white;
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.75em;
+        font-weight: 100;
+      }
+      .btn-messenger {
+        background-color: #0084FF;
+        color: white;
+        margin-top: 20px;
+        font-size: 16px;
+        &:hover {
+          border: 1px solid white;
+        }
+        img {
+          height: 30px;
+        }
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+    .iphone {
+      height: 530px;
+      position: absolute;
+      left: 30%;
+      width: auto;
+    }
+  }
+}

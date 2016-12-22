@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+body {
+  font-family: "Source Sans Pro";
+  background: linear-gradient( 40deg, #B4ED50, #429321 );
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

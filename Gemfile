@@ -33,6 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'bootstrap-sass', '~> 3.3.6'
+
 gem 'high_voltage', '~> 3.0.0'
 
 gem 'figaro'
