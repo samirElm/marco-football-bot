@@ -24,7 +24,7 @@ class FootballData
 
   def schedule_for(team)
     all_teams_from(434)["teams"].each do |team|
-      if team["shortName"].include?(club)
+      if team["name"].downcase.include?(club) || team["shortName"].downcase.include?(club)
         return all_fixtures_from(team["_links"]["fixtures"]["href"])
       end
     end
