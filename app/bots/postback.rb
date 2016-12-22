@@ -22,7 +22,7 @@ class Postback
             template_type: 'button',
             text: "Ok mon pote, en quoi puis-je t'aider ?",
             buttons: [
-              { type: 'postback', title: 'Connaitre le prochain match', payload: 'NEXT_GAME' }
+              { type: 'postback', title: 'Prochain match', payload: 'NEXT_GAME' }
             ]
           }
         }
