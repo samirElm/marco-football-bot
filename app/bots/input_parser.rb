@@ -6,6 +6,6 @@ class InputParser
   end
 
   def club
-    input.capitalize
+    input.downcase.gsub('-', ' ')
   end
 end

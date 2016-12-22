@@ -4,6 +4,10 @@ include Facebook::Messenger
 
 Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["ACCESS_TOKEN"])
 
+Bot.on :postback do |postback|
+  Postback.new(postback).reply
+end
+
 Bot.on :message do |message|
   message.type
   # extract club from message.text
